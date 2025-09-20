@@ -1,93 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Second Page</title>
-<style>
-body {
-      font-family: 'Arial', sans serif;
-      background color: #f9f9f9;
-}
-header {
-     background-color: #777;
-     color: white;
-     font-weight: 900;
-     font-size: 1rem;
-     text-align: center;
- }
-nav {
-      background-color: #999;
-      padding: 0.5rem 1rem;
-      font-weight: 600;
-      font-size: 0.9rem;
-      color: #ddd;
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AceYourStudies</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        color: black;
+        margin: 0;
+      }
+      header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background-color: #af6e63;
+        color: black;
+        align-items: center;
+        padding: 10px 30px;
+        font-weight: bold;
+        font-size: 1.5em;
+      }
+      .logo {
+        height: 50px;
+        width: 50px;
+      }
+      nav {
+        display: flex;
+        font-weight: bold;
+        gap: 30px;
+      }
+      h2 {
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      h3 {
+        margin-top: 30px;
+      }
+      p {
+        max-width: 600px;
+        line-height: 1.5;
+        margin-bottom: 18px;
+      }
+      .content-flex {
       display: flex;
-      gap: 1.5rem;
+      gap: 40px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-top: 10px;
     }
-    nav a {
-      color: #ddd;
-      text-decoration: none;
-      cursor: pointer;
+      .text-section {
+      flex: 1 1 55%;
+      min-width: 350px;
     }
-    nav a:hover {
-      text-decoration: underline;
+    ul {
+      padding-left: 20px;
+      margin-top: 8px;
     }
-h2 {
-      text-align: left;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      color: #777;
+    ul {
+      padding-left: 20px;
+      margin-top: 8px;
     }
-    .content-box {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 1rem;
-      background-color: #555;
-      color: #eee;
-      font-size: 1rem;
-      line-height: 1.4;
-      border-radius: 1px;
+    ul li {
+      margin-bottom: 6px;
     }
-  </style>
-</head>
-<body>
-<header>
- INTRODUCING STUDY HABITS AND LISTING EFFECTIVE STUDY HABITS
-</header>
-<nav>
-    <a href="#">PAGE 1</a>
-    <a href="#">PAGE 3</a>
-  </nav>
-<main>
-<h2>STUDY HABITS</h2>
-<div class="content-box">
-      It is a practice and routine behaviors that individuals use to learn, apply new information, and skills or knowledge. It can also enhance learning outcomes, improve academic performance, and help individuals to stay organized and manage their time efficiently. By learning good study habits, individuals especially the students can optimize their learning process and achieve their academic goals.
+    footer {
+      background-color: #aa6d67;
+      color: black;
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 0.8rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .footer-left {
+      max-width: 250px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .footer-logo {
+      height: 40px;
+      width: 40px;
+      margin-bottom: 5px;
+    }
+    .footer-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-weight: bold;
+    }
+    .social-icons {
+      display: flex;
+      gap: 15px;
+    }
+    .social-icons a img {
+      height: 32px;
+      width: 32px;
+      display: block;
+    }
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        position: static;
+      }
+      .footer-right {
+        font-weight: 600;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="#" alt="logo" class="logo">
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Learn more</a>
+        <a href="#">Tips</a>
+        <a href="#" style=" font-weight: 700; text-decoration: underline;">Contact Us</a>
+      </nav>
+    </header>
+    <h2>INTRODUCING STUDY HABITS AND LISTING EFFECTIVE STUDY HABITS</h2>
+    <div class="content-flex">
+    <section class="text-section">
+      <h3>AceYourStudies</h3>
+      <p>Are you looking to boost your academic performance, reduce stress, and truly grasp complex concepts? The secret isn't just about studying harder, but about studying smarter. Developing effective study habits is the cornerstone of academic success and a skill that will serve you well throughout your life.</p>
+    </section>
     </div>
-  </main>
-<section>
-<h2>LIST OF EFFECTIVE STUDY HABITS</h2>
-<h3>Time management study habits</h3>
-<ul>
-<li>Prioritization - prioritize tasks based on its importance and deadlines.</li>
-<li>Create a study schedule - Plan out dedicated study time for each subject.</li>
-<li>Set time limits - Allocate specific time for each task to stay focused.</li>
-</ul>
-<h3>Active Learning Techniques</h3>
-<ul>
-<li>Summarization - Write what you've learned in a summary to improve understanding.</li>
-<li>Active Recall - Recall information from memory rather than re-reading it.</li>
-<li>Discuss with others - To explore topics and gain new insights.</li>
-</ul>
-<h3>Productivity and Focus Habits</h3>
-<ul>
-<li>Short breaks - Take a short break to rest and recharge to avoid burn out.</li>
-<li>Minimize distraction - Create a quiet study space and limit digital distraction to focus.</li>
-<li>Mindfulness and Focus - incorporate mindful techniques to improve your concentration.</li>
-</ul>
-</section>
-</body>
+  </body>
 </html>
-
-
-      
