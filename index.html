@@ -1,145 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AceYourStudies</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AceYourStudy</title>
+  </head>
+  <body>
     <style>
       body {
         font-family: Arial, sans-serif;
-        background-color: white;
-        color: black;
         margin: 0;
+        padding: 0;
       }
-      header {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        background-color: #af6e63;
-        color: black;
-        align-items: center;
-        padding: 10px 30px;
-        font-weight: bold;
-        font-size: 1.5em;
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: #242323;
+        color: #ffff;
+        padding: 0 1rem;
       }
-      .logo {
-        height: 50px;
-        width: 50px;
-      }
-      .nav-links {
-        color: black;
+      .logo a {
+        color: #f0ac45
         text-decoration: none;
-        font-size: 1.1rem;
-        position: relative;
-        transition: all 0.3s ease;
-        opacity: 0;
-        transform: translateY(-10px);
-        transition: all o.3s ease 0.2s;
       }
-      h2 {
-        font-weight: 700;
-        margin-bottom: 10px;
+      .logo span {
+        color: #fff;
       }
-      h3 {
-        margin-top: 30px;
+      .nav ul {
+        display: flex;
+        list-style-type: none;
       }
-      p {
-        max-width: 600px;
-        line-height: 1.5;
-        margin-bottom: 18px;
+      .nav ul li {
+        margin: 0 10px;
+        padding: 0 10px;
       }
-      .content-flex {
-      display: flex;
-      gap: 40px;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      margin-top: 10px;
-    }
-      .text-section {
-      flex: 1 1 55%;
-      min-width: 350px;
-    }
-    ul {
-      padding-left: 20px;
-      margin-top: 8px;
-    }
-    ul {
-      padding-left: 20px;
-      margin-top: 8px;
-    }
-    ul li {
-      margin-bottom: 6px;
-    }
-    footer {
-      background-color: #aa6d67;
-      color: black;
-      padding: 10px 30px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      font-size: 0.8rem;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-    .footer-left {
-      max-width: 250px;
-      display: flex;
-      flex-direction: column;
-      gap: 3px;
-    }
-    .footer-logo {
-      height: 40px;
-      width: 40px;
-      margin-bottom: 5px;
-    }
-    .footer-right {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      font-weight: bold;
-    }
-    .social-icons {
-      display: flex;
-      gap: 15px;
-    }
-    .social-icons a img {
-      height: 32px;
-      width: 32px;
-      display: block;
-    }
-    footer {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        position: static;
+      .nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 15px;
+        transition: all ease 0.4s;
       }
-      .footer-right {
-        font-weight: 600;
-        gap: 10px;
+      .nav ul li a:hover {
+        color: #f0ac45;
       }
     </style>
-  </head>
-  <body>
-    <header>
-      <img src="#" alt="logo" class="logo">
-      <nav>
-        <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Learn more</a></li>
-        <li><a href="#">Tips</a></li>
-        <li><a href="#" style=" font-weight: 700; text-decoration: underline;">Contact Us</a></li>
+    <div class="nav">
+      <div class="logo">
+        <h2><a href="#">Logo<span>.</span></a></h2>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Learn more</a></li>
+          <li><a href="#">Tips</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
-      </nav>
-    </header>
-    <h1>INTRODUCING STUDY HABITS AND LISTING EFFECTIVE STUDY HABITS</h1>
-    <div class="content-flex">
-    <section class="text-section">
-      <h2>AceYourStudies</h2>
-      <p>Are you looking to boost your academic performance, reduce stress, and truly grasp complex concepts? The secret isn't just about studying harder, but about studying smarter. Developing effective study habits is the cornerstone of academic success and a skill that will serve you well throughout your life.</p>
-    </section>
     </div>
   </body>
 </html>
